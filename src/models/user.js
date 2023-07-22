@@ -54,6 +54,14 @@ const userValidationSchemaByBody = [
 		),
 ]
 
+const loginValidationSchemaByBody = [
+	body('username')
+		.notEmpty()
+		.withMessage('El nombre de usuario no puede estar vacío'),
+	body('password').notEmpty().withMessage('La password no puede estar vacía'),
+]
+
 exports.User = User
 exports.userValidationSchemaByBody = userValidationSchemaByBody
+exports.loginValidationSchemaByBody = loginValidationSchemaByBody
 exports.upload = createUploader(validateAvatar)

@@ -2,7 +2,11 @@ const express = require('express')
 
 const UserControllers = require('../controllers/users')
 
-const { userValidationSchemaByBody, upload } = require('../models/user')
+const {
+	userValidationSchemaByBody,
+	loginValidationSchemaByBody,
+	upload,
+} = require('../models/user')
 const validate = require('../middlewares/validate')
 
 const router = express.Router()
@@ -16,7 +20,7 @@ router.post(
 )
 router.post(
 	'/signin',
-	userValidationSchemaByBody,
+	loginValidationSchemaByBody,
 	validate,
 	UserControllers.login
 )
