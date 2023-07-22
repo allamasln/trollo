@@ -2,7 +2,6 @@ require('express-async-errors')
 const { json } = require('express')
 const morgan = require('morgan')
 
-const fileErrors = require('../middlewares/fileErrors')
 const errors = require('../middlewares/errors')
 
 module.exports = function (app) {
@@ -17,6 +16,5 @@ module.exports = function (app) {
 		res.json('pong')
 	})
 
-	app.use(fileErrors)
 	app.use(errors)
 }
