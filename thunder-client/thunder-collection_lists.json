@@ -1,0 +1,106 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "lists",
+    "dateExported": "2023-07-19T08:49:17.662Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "80d98249-d0db-47db-b194-c4cfc2c13a22",
+            "colId": "6e84a0d3-8911-4821-a42e-05aa003b40ad",
+            "containerId": "",
+            "name": "/lists",
+            "url": "/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-07-17T12:23:02.297Z",
+            "modified": "2023-07-19T07:27:11.620Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8ab03253-a243-4c34-b0da-bab221f2f6a5",
+            "colId": "6e84a0d3-8911-4821-a42e-05aa003b40ad",
+            "containerId": "",
+            "name": "/lists/:id",
+            "url": "/64b6676a172cc9254ff9940d",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-07-17T12:23:28.439Z",
+            "modified": "2023-07-19T08:38:25.763Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8539cfc9-c885-49fa-b117-3927e1c4a927",
+            "colId": "6e84a0d3-8911-4821-a42e-05aa003b40ad",
+            "containerId": "",
+            "name": "/lists",
+            "url": "/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-07-17T12:23:49.477Z",
+            "modified": "2023-07-19T07:27:42.644Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFuYSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4OTc0ODY3Mn0.-73777jtfr12Gepfp1KFwQvhxtbpzP-dUhcSxoM9DjI",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Lista con jwt\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b3e1e8aa-8eaa-42c1-9168-ac9c8763c37a",
+            "colId": "6e84a0d3-8911-4821-a42e-05aa003b40ad",
+            "containerId": "",
+            "name": "/lists/:id",
+            "url": "/64b52c06fa2f7a30b9660c44",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-07-17T12:24:38.076Z",
+            "modified": "2023-07-19T07:27:48.496Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Lista 2 (UPDATED)\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "df08189a-bc1a-42a0-8a5a-ba6b2c38c56c",
+            "colId": "6e84a0d3-8911-4821-a42e-05aa003b40ad",
+            "containerId": "",
+            "name": "/lists/:id",
+            "url": "/64b532efac345d5d7df89a01",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-07-17T12:25:22.982Z",
+            "modified": "2023-07-19T07:27:53.129Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFuYSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4OTY3Njc1NH0.C5od28Gm8BdTxso1BxkL72fKdVKIL8fBdFc63ALeW6E"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "{{host}}:{{port}}/api/lists"
+        },
+        "envId": "8c9e2d6e-5f1f-4bc4-adc9-a05531bb52ec"
+    }
+}

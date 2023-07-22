@@ -1,0 +1,53 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "todos",
+    "dateExported": "2023-07-19T08:49:54.278Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "97a097da-fffd-4746-ae9b-ff5372f9bd14",
+            "colId": "283b715a-bf37-4b13-bb55-336da9b3c3cc",
+            "containerId": "",
+            "name": "/todos",
+            "url": "/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-07-19T08:34:43.963Z",
+            "modified": "2023-07-19T08:38:01.967Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Task 2 nueva\",\n  \"listId\": \"64b6676a172cc9254ff9940d\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "08ea922d-b94d-4d17-8d94-a2a2e4f54187",
+            "colId": "283b715a-bf37-4b13-bb55-336da9b3c3cc",
+            "containerId": "",
+            "name": "/todos/:id",
+            "url": "/64b7a0ed6576a36d370127cf",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2023-07-19T08:38:57.222Z",
+            "modified": "2023-07-19T08:39:43.522Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"actualizada\",\n  \"listId\": \"64b639b33f8418c6585ed0ce\"",
+                "form": []
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "{{host}}:{{port}}/api/todos"
+        },
+        "envId": "8c9e2d6e-5f1f-4bc4-adc9-a05531bb52ec"
+    }
+}
