@@ -1,7 +1,7 @@
 require('dotenv').config()
 const config = require('config')
 const winston = require('winston')
-
+console.log(process.env.NODE_ENV)
 const express = require('express')
 
 const app = express()
